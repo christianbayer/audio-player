@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="An Audio Player built with HTML5 + CSS3 + ES6 Javascript"/>
+    <meta name="keywords" content="audio, player, html5, css3, javascript"/>
+    <meta name="author" content="Christian Bayer"/>
+    <meta name="copyright" content="© 2020 - Christian Bayer"/>
+    <meta property="og:url" content="https://christianbayer.github.io/audio-player/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Audio Player"/>
+    <meta property="og:description" content="An Audio Player built with HTML5 + CSS3 + ES6 Javascript"/>
+    <meta property="og:image" content="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"/>
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Audio Player</h1>
+            <p>An Audio Player built with HTML5 + CSS3 + ES6 Javascript</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <h4>Demo</h4>
+
+            <div class="audio-container">
+                <div class="audio-track">
+                    <div class="audio-cover">
+                        <img src="https://picsum.photos/500/500" alt="Audio cover image">
+                    </div>
+                    <div class="audio-controls">
+                        <div class="audio-title">Spring Migration</div>
+                        <div class="audio-description">The Great North Sound Society</div>
+                        <div class="audio-seek">
+                            <input type="range" class="audio-seek-bar" min="0" max="1" value="0" step="0.001"/>
+                        </div>
+                        <div class="audio-times">
+                            <span class="audio-spent-time">0:00</span>
+                            <span class="audio-total-time">0:00</span>
+                        </div>
+                        <div class="audio-buttons">
+                            <button type="button" class="audio-button-backward">
+                                <i class="icon-backward"></i>
+                            </button>
+                            <button type="button" class="audio-button-play">
+                                <i class="icon-play"></i>
+                            </button>
+                            <button type="button" class="audio-button-pause" style="display: none;">
+                                <i class="icon-pause"></i>
+                            </button>
+                            <button type="button" class="audio-button-forward">
+                                <i class="icon-forward"></i>
+                            </button>
+                            <button type="button" class="audio-button-download">
+                                <i class="icon-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>This project is licensed under the MIT License - see the
+            <a href="https://github.com/christianbayer/audio-player/blob/master/LICENSE">LICENSE</a> file for details
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="js/player.js"></script>
+
+</body>
+</html>
